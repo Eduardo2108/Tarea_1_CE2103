@@ -6,8 +6,20 @@
 #define TAREAEXTRA_1_CE2103_LIST_H
 
 
-class List {
+#include "../Node/Node.h"
 
+class List {
+public:
+    int len;
+    Node *head;
+
+    int getLen() const;
+
+    void setLen(int len);
+
+    Node *getHead() const;
+
+    void setHead(Node *head);
 };
 
 

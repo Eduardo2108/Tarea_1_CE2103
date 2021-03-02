@@ -1,9 +1,17 @@
 #include <iostream>
 #include "src/Node/Node.h"
+#include "src/Simply linked list/SLL.h"
+
+using namespace std;
 
 int main() {
-    Node third = Node(nullptr, 3);
-    Node second = Node(&third, 2);
-    Node first = Node(&second, 1);
+    SLL *list = new SLL();
+
+    list->append(1);
+    list->append(2);
+    list->append(3);
+
+    list->show();
+
     return 0;
 }
