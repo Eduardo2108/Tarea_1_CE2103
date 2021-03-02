@@ -7,28 +7,33 @@
 
 using namespace std;
 
-
+/**
+ * Method used for adding an element to the end of the list.
+ * @param element: Type int object
+ */
 void SLL::append(int element) {
-    Node *newElement = new Node(element);
+    Node *newElement;
+    newElement = (new Node(element));
     if (this->head == nullptr) {
         this->head = this->tail = newElement;
-        this->len += 1;
-        cout << "Added : " << newElement->getValue() << " to the head of the list on pos: " << len - 1 << "\n";
     } else {
         this->tail->setNext(newElement);
         this->tail = newElement;
-        cout << "Added : " << newElement->getValue() << " to the end of the list on pos: " << len - 1 << "\n";
     }
     this->len += 1;
+    cout << "Added : " << newElement->getValue() << " to the list on pos: " << len - 1 << "\n";
 }
 
+/**
+ * Method for showing the list on the console.
+ */
 void SLL::show() const {
     if (this->head == nullptr) {
-        cout << "Empty list...";
+        cout << "[]";
     } else {
         cout << "[ ";
         Node *tmp = this->head;
-        for (int i = 0; i < (this->len - 2); ++i) {
+        for (int i = 0; i < (this->len - 1); ++i) {
             cout << tmp->getValue() << ", ";
             tmp = tmp->getNext();
         }

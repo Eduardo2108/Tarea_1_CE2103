@@ -12,17 +12,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="62634fda-79fe-4a75-9999-fb60db0a4020" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Simply linked list/SLL.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Simply linked list/SLL.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Collector/Collector.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Collector/Collector.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Collector/Collector.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Collector/Collector.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/List/List.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/List/List.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/List/List.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/List/List.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Node/Node.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Node/Node.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Node/Node.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Node/Node.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Simply linked list/SLL.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Simply linked list/SLL.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,7 +91,7 @@
       <workItem from="1614537024197" duration="801000" />
       <workItem from="1614537840779" duration="10105000" />
       <workItem from="1614626450654" duration="4055000" />
-      <workItem from="1614642907591" duration="11720000" />
+      <workItem from="1614642907591" duration="12123000" />
     </task>
     <task id="LOCAL-00001" summary="Project initialization and configuration">
       <created>1614537182695</created>
@@ -116,7 +107,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614537868447</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Now can add elements to the simply linked list.">
+      <created>1614656071732</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1614656071732</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -136,7 +134,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Project initialization and configuration" />
-    <option name="LAST_COMMIT_MESSAGE" value="Project initialization and configuration" />
+    <MESSAGE value="Now can add elements to the simply linked list." />
+    <option name="LAST_COMMIT_MESSAGE" value="Now can add elements to the simply linked list." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
