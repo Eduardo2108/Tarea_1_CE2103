@@ -8,13 +8,15 @@
 
 #include "../Node/Node.h"
 
+template<typename T>
+
 class SLL {
 public:
-    Node *head;
-    Node *tail;
+    Node<T> *head;
+    Node<T> *tail;
     int len;
 
-    void append(int element);
+    void append(T element);
 
     void show() const;
 };

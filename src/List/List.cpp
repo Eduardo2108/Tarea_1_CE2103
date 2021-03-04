@@ -4,19 +4,15 @@
 
 #include "List.h"
 
+template<typename T>
 
-int List::getLen() const {
+int List<T>::getLen() const {
     return len;
 }
 
-void List::setLen(int len) {
-    List::len = len;
-}
+template<typename T>
 
-Node *List::getHead() const {
+Node<T> *List<T>::getHead() const {
     return head;
 }
 
-void List::setHead(Node *head) {
-    List::head = head;
-}

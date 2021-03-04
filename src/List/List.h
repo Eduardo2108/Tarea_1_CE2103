@@ -8,18 +8,18 @@
 
 #include "../Node/Node.h"
 
+template<typename T>
 class List {
 public:
     int len;
-    Node *head;
+    Node<T> *head;
 
     int getLen() const;
 
-    void setLen(int len);
 
-    Node *getHead() const;
+    Node<T> *getHead() const;
 
-    void setHead(Node *head);
+
 };
 
 

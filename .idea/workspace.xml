@@ -12,8 +12,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="62634fda-79fe-4a75-9999-fb60db0a4020" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/List/List.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/List/List.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/List/List.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/List/List.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Node/Node.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Node/Node.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Node/Node.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Node/Node.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Simply linked list/SLL.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Simply linked list/SLL.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Simply linked list/SLL.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Simply linked list/SLL.h" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,22 +69,41 @@
       <recent name="$PROJECT_DIR$/src/Collector" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="CMake Application.TareaExtra_1_CE2103">
     <configuration name="TareaExtra_1_CE2103" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="TareaExtra_1_CE2103" TARGET_NAME="TareaExtra_1_CE2103" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="TareaExtra_1_CE2103" RUN_TARGET_NAME="TareaExtra_1_CE2103">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true">
+    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration name="/home/eduardo/Desktop/Projects/TareaExtra_1_CE2103" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list />
+        </option>
+        <option name="vmOptions" value="" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle./home/eduardo/Desktop/Projects/TareaExtra_1_CE2103" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -92,6 +117,7 @@
       <workItem from="1614537840779" duration="10105000" />
       <workItem from="1614626450654" duration="4055000" />
       <workItem from="1614642907591" duration="12123000" />
+      <workItem from="1614815657074" duration="1521000" />
     </task>
     <task id="LOCAL-00001" summary="Project initialization and configuration">
       <created>1614537182695</created>
@@ -151,5 +177,8 @@
         </breakpoint>
       </default-breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="../../../Desktop/Projects/TareaExtra_1_CE2103/cmake-build-debug-coverage" NAME="TareaExtra_1_CE2103 Coverage Results" MODIFIED="1614657723249" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="gcov/llvm" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

@@ -6,44 +6,57 @@
 
 using namespace std;
 
+template<typename T>
+
 /**
  * Get for the value stored in the node.
  * @return Integer object.
  */
-int Node::getValue() const {
+T Node<T>::getValue() const {
     return value;
 }
 
+template<typename T>
+
 /***
- * Method for storing a new value on the node.
- * @param value: Integer object.
+ * Method for storing a new newValue on the node.
+ * @param newValue: Integer object.
  */
-void Node::setValue(int value) {
-    Node::value = value;
+void Node<T>::setValue(T newValue) {
+    Node::value = newValue;
 }
+
+template<typename T>
 
 /**
  * Get for the pointer stored in the node, pointing to the next node in the list.
  * @return Pointer to next, nullptr if none.
  */
-Node *Node::getNext() const {
+Node<T> *Node<T>::getNext() const {
     return next;
 }
 
+template<typename T>
+
 /**
- * Set for the next pointer.
- * @param next: pointer to a node.
+ * Set for the newNext pointer.
+ * @param newNext: pointer to a node.
  */
-void Node::setNext(Node *next) {
-    Node::next = next;
+void Node<T>::setNext(Node<T> *newNext) {
+    Node::next = newNext;
 }
+
+template<typename T>
 
 /**
  * Constructor for the node.
  * @param value: Integer value thats going to be stored in the node.
  */
-Node::Node(int value) {
+Node<T>::Node(T value) {
     this->value = value;
     this->next = NULL;
 
 }
+
+template
+class Node<int>;

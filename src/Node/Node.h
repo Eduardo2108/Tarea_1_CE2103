@@ -10,21 +10,21 @@
 #include <cstdio>
 #include "iostream"
 
-
+template<typename T>
 class Node {
 public:
-    Node(int value);
+    explicit Node(T value);
 
-    int value;
+    T value;
     Node *next;
 
-    int getValue() const;
+    T getValue() const;
 
-    void setValue(int value);
+    void setValue(T newValue);
 
     Node *getNext() const;
 
-    void setNext(Node *next);
+    void setNext(Node *newNext);
 };
 
 #endif //TAREAEXTRA_1_CE2103_NODE_H
