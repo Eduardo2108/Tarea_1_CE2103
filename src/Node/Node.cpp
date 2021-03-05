@@ -58,5 +58,15 @@ Node<T>::Node(T value) {
 
 }
 
+template<typename T>
+bool Node<T>::operator==(const Node &rhs) const {
+    return value == rhs.value;
+}
+
+template<typename T>
+bool Node<T>::operator!=(const Node &rhs) const {
+    return !(rhs == *this);
+}
+
 template
 class Node<int>;

@@ -6,6 +6,7 @@
 #define TAREAEXTRA_1_CE2103_LIST_H
 
 
+#include <ostream>
 #include "../Node/Node.h"
 
 template<typename T>
@@ -16,6 +17,7 @@ public:
 
     int getLen() const;
 
+    friend std::ostream &operator<<(std::ostream &os, const List &list);
 
     Node<T> *getHead() const;
 

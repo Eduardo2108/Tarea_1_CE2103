@@ -18,6 +18,10 @@ public:
     T value;
     Node *next;
 
+    bool operator==(const Node &rhs) const;
+
+    bool operator!=(const Node &rhs) const;
+
     T getValue() const;
 
     void setValue(T newValue);

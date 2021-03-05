@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated>
       <config projectName="TareaExtra_1_CE2103" targetName="TareaExtra_1_CE2103" />
@@ -11,9 +14,10 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="62634fda-79fe-4a75-9999-fb60db0a4020" name="Default Changelist" comment="">
+    <list default="true" id="62634fda-79fe-4a75-9999-fb60db0a4020" name="Default Changelist" comment="Made the simple list generic, using template.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Collector/Collector.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Collector/Collector.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/List/List.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/List/List.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/List/List.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/List/List.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Node/Node.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Node/Node.cpp" afterDir="false" />
@@ -34,6 +38,7 @@
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
+        <option value="Eduardo &lt;eduardo212792@gmail.com&gt;" />
         <option value="Eduardo Zumbado Granados &lt;42503164+eduardo2108@users.noreply.github.com&gt;" />
       </list>
     </option>
@@ -62,7 +67,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="cf.first.check.clang-format" value="false" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Language Defaults" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -75,9 +80,9 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true">
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
-        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
     <configuration name="/home/eduardo/Desktop/Projects/TareaExtra_1_CE2103" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
@@ -117,7 +122,8 @@
       <workItem from="1614537840779" duration="10105000" />
       <workItem from="1614626450654" duration="4055000" />
       <workItem from="1614642907591" duration="12123000" />
-      <workItem from="1614815657074" duration="1521000" />
+      <workItem from="1614815657074" duration="5728000" />
+      <workItem from="1614904214148" duration="555000" />
     </task>
     <task id="LOCAL-00001" summary="Project initialization and configuration">
       <created>1614537182695</created>
@@ -140,7 +146,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614656071732</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Made the simple list generic, using template.">
+      <created>1614817453537</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1614817453537</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -161,7 +174,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Project initialization and configuration" />
     <MESSAGE value="Now can add elements to the simply linked list." />
-    <option name="LAST_COMMIT_MESSAGE" value="Now can add elements to the simply linked list." />
+    <MESSAGE value="Made the simple list generic, using template." />
+    <option name="LAST_COMMIT_MESSAGE" value="Made the simple list generic, using template." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

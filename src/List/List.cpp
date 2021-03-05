@@ -16,3 +16,10 @@ Node<T> *List<T>::getHead() const {
     return head;
 }
 
+template<typename T>
+
+std::ostream &operator<<(std::ostream &os, const List<T> &list) {
+    os << "len: " << list.len << " head: " << list.head;
+    return os;
+}
+

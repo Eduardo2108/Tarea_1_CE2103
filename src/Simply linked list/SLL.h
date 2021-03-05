@@ -6,6 +6,7 @@
 #define TAREAEXTRA_1_CE2103_SLL_H
 
 
+#include <ostream>
 #include "../Node/Node.h"
 
 template<typename T>
@@ -15,6 +16,8 @@ public:
     Node<T> *head;
     Node<T> *tail;
     int len;
+
+    void del(T element);
 
     void append(T element);
 
