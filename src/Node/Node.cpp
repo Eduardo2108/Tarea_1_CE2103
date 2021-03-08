@@ -50,11 +50,10 @@ template<typename T>
 
 /**
  * Constructor for the node.
- * @param value: Integer value thats going to be stored in the node.
+ * @param newValue: Integer newValue thats going to be stored in the node.
  */
-Node<T>::Node(T value) {
-    this->value = value;
-    this->next = NULL;
+Node<T>::Node(T newValue) {
+    this->value = newValue;
 
 }
 
@@ -68,5 +67,14 @@ bool Node<T>::operator!=(const Node &rhs) const {
     return !(rhs == *this);
 }
 
+template<typename T>
+void Node<T>::show() const {
+
+    cout << "Node value: " << this->value << "\n";
+}
+
 template
 class Node<int>;
+
+template
+class Node<Node<int> **>;

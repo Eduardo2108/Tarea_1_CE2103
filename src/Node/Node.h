@@ -12,8 +12,9 @@
 
 template<typename T>
 class Node {
+
 public:
-    explicit Node(T value);
+    explicit Node(T newValue);
 
     T value;
     Node *next;
@@ -29,6 +30,8 @@ public:
     Node *getNext() const;
 
     void setNext(Node *newNext);
+
+    void show() const;
 };
 
 #endif //TAREAEXTRA_1_CE2103_NODE_H

@@ -13,7 +13,7 @@ template<typename T>
 
 class Collector {
 private:
-    SLL<int> memoryManagment;
+    SLL<Node<T> **> *memoryManagement = new SLL<Node<T> **>;
 public:
     Node<T> getNode(T value);
 
@@ -25,6 +25,8 @@ public:
  *       *hacer un metodo que reciba un elemento tipo T y retorne un puntero que apunte a un objeto Node<T>
  */
 
+
+    void addDir(Node<T> *&pntrNode);
 };
 
 

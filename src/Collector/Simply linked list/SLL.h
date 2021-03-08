@@ -13,15 +13,24 @@ template<typename T>
 
 class SLL {
 public:
-    Node<T> *head;
-    Node<T> *tail;
-    int len;
+    Node<T> *head = nullptr;
+    Node<T> *tail = nullptr;
+
+    SLL();
+
+    int len = 0;
+
+    Node<T> *getHead() const;
 
     void del(T element);
 
     void append(T element);
 
     void show() const;
+
+    T get(int i);
+
+    void delIndex(int index);
 };
 
 

@@ -14,9 +14,7 @@ template<typename T>
  * @param element: Type int object
  */
 void SLL<T>::append(T element) {
-    /**> Memory assignment for the Node
-     *
-     */
+    /**> Memory assignment for the Node*/
     Node<T> *newElement = (Node<T> *) (malloc(sizeof(Node<T>)));
     /**> Creating the Node instance in the memory space assigned*/
     newElement = new(newElement) Node<T>(element);
@@ -71,5 +69,39 @@ void SLL<T>::del(T element) {
 
 }
 
+template<typename T>
+T SLL<T>::get(int i) {
+    Node<T> *tmp = this->head;
+    for (int j = 0; j < i; ++j) {
+
+        tmp = tmp->getNext();
+
+    }
+    return tmp->getValue();
+}
+
+template<typename T>
+void SLL<T>::delIndex(int index) {
+    this->del(this->get(index));
+
+}
+
+template<typename T>
+Node<T> *SLL<T>::getHead() const {
+    return head;
+}
+
+template<typename T>
+SLL<T>::SLL() {
+    this->head = NULL;
+    this->len = 0;
+    this->tail = NULL;
+}
+
 template
 class SLL<int>;
+
+template
+class SLL<Node<int> **>;
+
+
