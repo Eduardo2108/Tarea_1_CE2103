@@ -14,10 +14,13 @@ template<typename T>
  * @param element: Type int object
  */
 void SLL<T>::append(T element) {
-    /**> Memory assignment for the Node*/
+    /**> Memory assignment for the Node
+     *
+     */
     Node<T> *newElement = (Node<T> *) (malloc(sizeof(Node<T>)));
     /**> Creating the Node instance in the memory space assigned*/
     newElement = new(newElement) Node<T>(element);
+
 
     if (this->head == nullptr) {
         this->head = this->tail = newElement;
@@ -26,7 +29,6 @@ void SLL<T>::append(T element) {
         this->tail = newElement;
     }
     this->len += 1;
-    //cout << "Added : " << newElement->getValue() << " to the list on pos: " << len - 1 << "\n";
 }
 
 template<typename T>
@@ -49,7 +51,7 @@ void SLL<T>::show() const {
 }
 
 template<typename T>
-
+//TODO: comment this method for documentation.
 void SLL<T>::del(T element) {
     if (element == this->head->getValue()) {
         this->head = this->head->getNext();
@@ -66,9 +68,8 @@ void SLL<T>::del(T element) {
             }
         }
     }
-    
-}
 
+}
 
 template
 class SLL<int>;

@@ -6,10 +6,19 @@
 #define TAREAEXTRA_1_CE2103_COLLECTOR_H
 
 
-#include "../List/List.h"
+#include "Simply linked list/SLL.h"
 #include "../Node/Node.h"
 
+template<typename T>
+
 class Collector {
+private:
+    SLL<int> memoryManagment;
+public:
+    Node<T> getNode(T value);
+
+    void deleteNode(Node<T> *pntrNode);
+
 /**
  * TODO: *crear lista SLL que reciba direcciones de memoria &(Node<T>)
  *       *crear algoritmo que encuentre una dirección de memoria para crear el objeto Node<T>

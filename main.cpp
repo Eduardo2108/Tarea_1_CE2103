@@ -26,4 +26,5 @@ int main(int argc, char *argv[]) {
     lista->show();
     lista->del(4);
     lista->show();
+
 }

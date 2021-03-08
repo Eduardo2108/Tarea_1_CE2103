@@ -7,7 +7,7 @@
 
 
 #include <ostream>
-#include "../Node/Node.h"
+#include "../../Node/Node.h"
 
 template<typename T>
 
