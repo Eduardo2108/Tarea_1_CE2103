@@ -77,4 +77,4 @@ template
 class Node<int>;
 
 template
-class Node<Node<int> **>;
+class Node<Node<int> *>;

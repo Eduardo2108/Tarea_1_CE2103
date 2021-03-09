@@ -13,20 +13,20 @@ template<typename T>
 
 class Collector {
 private:
-    SLL<Node<T> **> *memoryManagement = new SLL<Node<T> **>;
+    SLL<Node<T> *> *memoryManagement = new SLL<Node<T> *>;
 public:
-    Node<T> getNode(T value);
+    Node<int> *getNode(T value);
 
     void deleteNode(Node<T> *pntrNode);
 
 /**
- * TODO: *crear lista SLL que reciba direcciones de memoria &(Node<T>)
- *       *crear algoritmo que encuentre una dirección de memoria para crear el objeto Node<T>
- *       *hacer un metodo que reciba un elemento tipo T y retorne un puntero que apunte a un objeto Node<T>
+ * TODO:crear algoritmo que encuentre una dirección de memoria para crear el objeto Node<T>
  */
 
 
-    void addDir(Node<T> *&pntrNode);
+    void addDir(Node<T> *pntrNode);
+
+    void show();
 };
 
 

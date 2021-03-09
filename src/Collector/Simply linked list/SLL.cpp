@@ -15,7 +15,7 @@ template<typename T>
  */
 void SLL<T>::append(T element) {
     /**> Memory assignment for the Node*/
-    Node<T> *newElement = (Node<T> *) (malloc(sizeof(Node<T>)));
+    auto *newElement = (Node<T> *) (malloc(sizeof(Node<T>)));
     /**> Creating the Node instance in the memory space assigned*/
     newElement = new(newElement) Node<T>(element);
 
@@ -102,6 +102,6 @@ template
 class SLL<int>;
 
 template
-class SLL<Node<int> **>;
+class SLL<Node<int> *>;
 
 

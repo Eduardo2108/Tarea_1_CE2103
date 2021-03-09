@@ -7,8 +7,11 @@ using namespace std;
 
 int main(int argc, char *argv[]) {
     auto *collector = new Collector<int>();
-    Node<int> node = collector->getNode(777);
-    node.show();
+    Node<int> *node = collector->getNode(777);
+
+    collector->deleteNode(node);
+    collector->show();
+
     return 0;
 
 }
