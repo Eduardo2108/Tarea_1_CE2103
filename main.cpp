@@ -7,7 +7,7 @@
 using namespace std;
 
 int main(int argc, char *argv[]) {
-    auto *lista = new List<int>();
+/*    auto *lista = new List<int>();
     lista->append(1);
     lista->append(2);
     lista->append(3);
@@ -18,7 +18,7 @@ int main(int argc, char *argv[]) {
     lista->del(3);
 
 
-    lista->getCollector().show();
+    lista->getCollector().show();*/
 
     return 0;
 

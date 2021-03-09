@@ -15,8 +15,6 @@ class Collector {
 private:
     SLL<Node<T> *> *memoryManagement = new SLL<Node<T> *>;
 
-    void addDir(Node<T> *pntrNode);
-
 public:
 
     Node<int> *getNode(T value);

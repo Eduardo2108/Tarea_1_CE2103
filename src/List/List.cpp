@@ -6,18 +6,12 @@
 
 using namespace std;
 
-template<typename T>
-
-int List<T>::getLen() const {
-    return len;
-}
-
-template<typename T>
-
-Node<T> *List<T>::getHead() const {
-    return head;
-}
-
+/**>
+ * This method adds an element to the end of the list, using the memory collector
+ * for allocating the memory.
+ * @tparam T Generic data type, must have equal operator.
+ * @param element element to add to the list.
+ */
 template<typename T>
 void List<T>::append(T element) {
     /**> Get the node object from the Collector instance.*/
@@ -33,6 +27,10 @@ void List<T>::append(T element) {
 
 }
 
+/**>
+ * This method prints the list into the console.
+ * @tparam T Generic data type, must have equal operator.
+ */
 template<typename T>
 void List<T>::show() {
     if (this->head == nullptr) {
@@ -48,11 +46,11 @@ void List<T>::show() {
     }
 }
 
-template<typename T>
-Collector<T> List<T>::getCollector() {
-    return this->collector;
-}
-
+/**>
+ * Method for deleting a Node of the list.
+ * @tparam T Generic data type, must have equal operator.
+ * @param element T type element to eliminate from the list.
+ */
 template<typename T>
 void List<T>::del(T element) {
     if (element == this->head->getValue()) {
@@ -76,6 +74,23 @@ void List<T>::del(T element) {
         return;
     }
 
+}
+
+template<typename T>
+
+Node<T> *List<T>::getHead() const {
+    return head;
+}
+
+template<typename T>
+
+int List<T>::getLen() const {
+    return len;
+}
+
+template<typename T>
+Collector<T> List<T>::getCollector() {
+    return this->collector;
 }
 
 template

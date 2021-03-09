@@ -47,8 +47,12 @@ void SLL<T>::show() const {
     }
 }
 
+/**>
+ * Method for deleting a Node of the list.
+ * @tparam T Generic data type, must have equal operator.
+ * @param element T type element to eliminate from the list.
+ */
 template<typename T>
-//TODO: comment this method for documentation.
 void SLL<T>::del(T element) {
     if (element == this->head->getValue()) {
         this->head = this->head->getNext();
@@ -68,8 +72,17 @@ void SLL<T>::del(T element) {
 
 }
 
+/**>
+ * Method for getting an element of the list given its position on a zero-based index.
+ * @tparam T T Generic data type, must have equal operator.
+ * @param i zero-based index of the element.
+ * @return NULL if the index its out of bound, or the element.
+ */
 template<typename T>
 T SLL<T>::get(int i) {
+    if (i >= this->len) {
+        return 0;
+    }
     Node<T> *tmp = this->head;
     for (int j = 0; j < i; ++j) {
 
@@ -77,6 +90,21 @@ T SLL<T>::get(int i) {
 
     }
     return tmp->getValue();
+}
+
+/**>
+ * Method for deleting the first element of the list.
+ * @tparam T Generic data type, must have equal operator.
+ */
+template<typename T>
+void SLL<T>::delHead() {
+    this->del(this->head->getValue());
+
+}
+
+template<typename T>
+int SLL<T>::getLen() {
+    return this->len;
 }
 
 template<typename T>
@@ -91,17 +119,10 @@ SLL<T>::SLL() {
     this->tail = NULL;
 }
 
-template<typename T>
-void SLL<T>::delHead() {
-    this->del(this->head->getValue());
-
-}
-
-template<typename T>
-int SLL<T>::getLen() {
-    return this->len;
-}
-
+/**
+ * Templates for the proper work of the generic class, each data type used in the code, should be initialized here
+ * for the code to compile.
+ */
 template
 class SLL<int>;
 
