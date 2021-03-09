@@ -2,15 +2,23 @@
 #include "src/Node/Node.h"
 #include "src/Collector//Simply linked list/SLL.h"
 #include "src/Collector/Collector.h"
+#include "src/List/List.h"
 
 using namespace std;
 
 int main(int argc, char *argv[]) {
-    auto *collector = new Collector<int>();
-    Node<int> *node = collector->getNode(777);
+    auto *lista = new List<int>();
+    lista->append(1);
+    lista->append(2);
+    lista->append(3);
 
-    collector->deleteNode(node);
-    collector->show();
+    lista->show();
+    lista->del(1);
+    lista->del(2);
+    lista->del(3);
+
+
+    lista->getCollector().show();
 
     return 0;
 

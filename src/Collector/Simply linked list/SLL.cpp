@@ -19,7 +19,6 @@ void SLL<T>::append(T element) {
     /**> Creating the Node instance in the memory space assigned*/
     newElement = new(newElement) Node<T>(element);
 
-
     if (this->head == nullptr) {
         this->head = this->tail = newElement;
     } else {
@@ -81,12 +80,6 @@ T SLL<T>::get(int i) {
 }
 
 template<typename T>
-void SLL<T>::delIndex(int index) {
-    this->del(this->get(index));
-
-}
-
-template<typename T>
 Node<T> *SLL<T>::getHead() const {
     return head;
 }
@@ -96,6 +89,17 @@ SLL<T>::SLL() {
     this->head = NULL;
     this->len = 0;
     this->tail = NULL;
+}
+
+template<typename T>
+void SLL<T>::delHead() {
+    this->del(this->head->getValue());
+
+}
+
+template<typename T>
+int SLL<T>::getLen() {
+    return this->len;
 }
 
 template

@@ -8,33 +8,33 @@
 using namespace std;
 
 template<typename T>
-Node<int> * Collector<T>::getNode(T value) {
+Node<int> *Collector<T>::getNode(T value) {
     Node<T> *newElement;
     //If theres no address to recycle
     if (this->memoryManagement->len == 0) {
         /**> Memory assignment for the Node*/
         auto *dir = (Node<T> *) (malloc(sizeof(Node<T>)));
 
-        cout << "Memory block assigned: " << &(*dir) << "\n";
         /**> Creating the Node instance in the memory space assigned*/
-
         newElement = new(dir) Node<T>(value);
-        cout << "Memory block used: " << &(*newElement) << "\n";
-
+        cout << "Memory block allocated: " << &(*newElement) << "\n";
     } else {
         Node<T> *i = this->memoryManagement->getHead()->getValue();
         newElement = new(i)Node<T>(value);
+        this->memoryManagement->delHead();
+        cout << "Memory block recycled: " << &(*newElement) << "\n";
+
     }
     return newElement;
 
 }
 
 template<typename T>
-void Collector<T>::deleteNode(Node<T> *pntrNode) {
+void Collector<T>::recycleNode(Node<T> *pntrNode) {
+    free(&(*pntrNode));
+
     //add the memory address to the list to recycle later.
     addDir(pntrNode);
-    //free the memory address
-    //free(*pntrNode);
 }
 
 template<typename T>
@@ -47,8 +47,16 @@ void Collector<T>::addDir(Node<T> *pntrNode) {
 
 template<typename T>
 void Collector<T>::show() {
-    this->memoryManagement->show();
+    if (this->memoryManagement->getLen() == 0) {
+        cout << "No memory available for recycling." << "\n";
+    } else {
+        cout << " - - - - - - - - Memory blocks for recycling - - - - - - - - " << "\n";
+        for (int i = 0; i < this->memoryManagement->getLen(); ++i) {
+            cout << "Address: " << this->memoryManagement->get(i) << "\n";
+        }
+        cout << " - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - " << "\n";
 
+    }
 }
 
 

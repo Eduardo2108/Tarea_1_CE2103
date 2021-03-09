@@ -14,17 +14,14 @@ template<typename T>
 class Collector {
 private:
     SLL<Node<T> *> *memoryManagement = new SLL<Node<T> *>;
-public:
-    Node<int> *getNode(T value);
-
-    void deleteNode(Node<T> *pntrNode);
-
-/**
- * TODO:crear algoritmo que encuentre una dirección de memoria para crear el objeto Node<T>
- */
-
 
     void addDir(Node<T> *pntrNode);
+
+public:
+
+    Node<int> *getNode(T value);
+
+    void recycleNode(Node<T> *pntrNode);
 
     void show();
 };

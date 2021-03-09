@@ -8,20 +8,28 @@
 
 #include <ostream>
 #include "../Node/Node.h"
+#include "../Collector/Collector.h"
 
 template<typename T>
 class List {
-public:
+private:
     int len;
     Node<T> *head;
+    Node<T> *tail;
+    Collector<T> collector;
+public:
+    void append(T element);
+
+    void show();
+
+    void del(T element);
 
     int getLen() const;
-
-    friend std::ostream &operator<<(std::ostream &os, const List &list);
 
     Node<T> *getHead() const;
 
 
+    Collector<T> getCollector();
 };
 
 

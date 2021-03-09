@@ -31,6 +31,10 @@ public:
     T get(int i);
 
     void delIndex(int index);
+
+    void delHead();
+
+    int getLen();
 };
 
 
