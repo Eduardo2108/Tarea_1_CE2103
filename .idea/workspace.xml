@@ -16,14 +16,7 @@
   <component name="ChangeListManager">
     <list default="true" id="62634fda-79fe-4a75-9999-fb60db0a4020" name="Default Changelist" comment="Documentation in Node.cpp, List.cpp and SLL.cpp">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Collector/Collector.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Collector/Collector.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Collector/Collector.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Collector/Collector.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Collector/Simply linked list/SLL.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Collector/Simply linked list/SLL.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/List/List.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/List/List.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/List/List.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/List/List.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Node/Node.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/Node/Node.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Node/Node.h" beforeDir="false" afterPath="$PROJECT_DIR$/src/Node/Node.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,6 +54,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="ToolWindowRun.ShowToolbar" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="cf.first.check.clang-format" value="false" />
     <property name="full.screen.before.presentation.mode" value="true" />
@@ -148,7 +142,7 @@
       <workItem from="1615157971503" duration="7618000" />
       <workItem from="1615170231242" duration="5922000" />
       <workItem from="1615252916316" duration="14808000" />
-      <workItem from="1615339672900" duration="3298000" />
+      <workItem from="1615339672900" duration="3665000" />
     </task>
     <task id="LOCAL-00001" summary="Project initialization and configuration">
       <created>1614537182695</created>
