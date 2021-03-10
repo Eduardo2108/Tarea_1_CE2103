@@ -13,7 +13,7 @@ template<typename T>
 
 class Collector {
 private:
-    SLL<Node<T> *> *memoryManagement = new SLL<Node<T> *>;
+    SLL<Node<T> *> *memoryManagement = new SLL<Node<T> *> /*!< List where the memory addresses to recycle are stored.*/;
 
 public:
 

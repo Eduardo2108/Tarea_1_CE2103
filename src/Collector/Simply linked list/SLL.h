@@ -13,8 +13,8 @@ template<typename T>
 
 class SLL {
 public:
-    Node<T> *head = nullptr;
-    Node<T> *tail = nullptr;
+    Node<T> *head = nullptr; /*!< Head of the list.*/
+    Node<T> *tail = nullptr;/*!< Length of the list.*/
 
     SLL();
 

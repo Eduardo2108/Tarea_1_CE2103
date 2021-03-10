@@ -1,0 +1,28 @@
+        -:    0:Source:/home/eduardo/Desktop/Projects/TareaExtra_1_CE2103/src/List/List.cpp
+        -:    0:Graph:/home/eduardo/Desktop/Projects/TareaExtra_1_CE2103/cmake-build-debug-coverage/CMakeFiles/TareaExtra_1_CE2103.dir/src/List/List.cpp.gcno
+        -:    0:Data:/home/eduardo/Desktop/Projects/TareaExtra_1_CE2103/cmake-build-debug-coverage/CMakeFiles/TareaExtra_1_CE2103.dir/src/List/List.cpp.gcda
+        -:    0:Runs:1
+        -:    1://
+        -:    2:// Created by eduardo on 2/28/21.
+        -:    3://
+        -:    4:
+        -:    5:#include "List.h"
+        -:    6:
+        -:    7:
+    #####:    8:int List::getLen() const {
+    #####:    9:    return len;
+    %%%%%:    9-block  0
+        -:   10:}
+        -:   11:
+    #####:   12:void List::setLen(int len) {
+    #####:   13:    List::len = len;
+    #####:   14:}
+        -:   15:
+    #####:   16:Node *List::getHead() const {
+    #####:   17:    return head;
+    %%%%%:   17-block  0
+        -:   18:}
+        -:   19:
+    #####:   20:void List::setHead(Node *head) {
+    #####:   21:    List::head = head;
+    #####:   22:}

@@ -9,7 +9,7 @@ using namespace std;
 template<typename T>
 
 /**
- * Get for the value stored in the node.
+ * @brief Get for the value stored in the node.
  * @return Integer object.
  */
 T Node<T>::getValue() const {
@@ -19,7 +19,7 @@ T Node<T>::getValue() const {
 template<typename T>
 
 /***
- * Method for storing a new newValue on the node.
+ * @brief Method for storing a new newValue on the node.
  * @param newValue: Integer object.
  */
 void Node<T>::setValue(T newValue) {
@@ -29,7 +29,7 @@ void Node<T>::setValue(T newValue) {
 template<typename T>
 
 /**
- * Get for the pointer stored in the node, pointing to the next node in the list.
+ * @brief Get for the pointer stored in the node, pointing to the next node in the list.
  * @return Pointer to next, nullptr if none.
  */
 Node<T> *Node<T>::getNext() const {
@@ -39,7 +39,7 @@ Node<T> *Node<T>::getNext() const {
 template<typename T>
 
 /**
- * Set for the newNext pointer.
+ * @brief Set for the newNext pointer.
  * @param newNext: pointer to a node.
  */
 void Node<T>::setNext(Node<T> *newNext) {
@@ -49,7 +49,7 @@ void Node<T>::setNext(Node<T> *newNext) {
 template<typename T>
 
 /**
- * Constructor for the node.
+ * @brief Constructor for the node.
  * @param newValue: Integer newValue thats going to be stored in the node.
  */
 Node<T>::Node(T newValue) {

@@ -16,8 +16,8 @@ class Node {
 public:
     explicit Node(T newValue);
 
-    T value;
-    Node *next;
+    T value; /*!< Value stored in the node.*/
+    Node *next;  /*!<Pointer to the next node in the list..*/
 
     bool operator==(const Node &rhs) const;
 

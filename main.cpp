@@ -6,19 +6,33 @@
 
 using namespace std;
 
+
 int main(int argc, char *argv[]) {
-/*    auto *lista = new List<int>();
+
+    // 1- Crear instancia de List<>
+    auto *lista = new List<int>();
+
+    // 2- Agregar los valores 1, 2, 3 y 4.
+
     lista->append(1);
     lista->append(2);
     lista->append(3);
 
+    // show list.
     lista->show();
-    lista->del(1);
+    lista->getCollector().show();
+
+    // 3- Eliminar el valor 2.
     lista->del(2);
-    lista->del(3);
+    //show collector+
+    lista->getCollector().show();
+    //show list
+    lista->show();
 
 
-    lista->getCollector().show();*/
+    // 4- Agregar el valor 5
+    lista->append(5);
+    lista->show();
 
     return 0;
 

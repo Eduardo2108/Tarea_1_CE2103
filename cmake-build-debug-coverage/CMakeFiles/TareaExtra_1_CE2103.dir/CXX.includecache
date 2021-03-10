@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/eduardo/Desktop/Projects/TareaExtra_1_CE2103/main.cpp
+iostream
+-
+src/Node/Node.h
+/home/eduardo/Desktop/Projects/TareaExtra_1_CE2103/src/Node/Node.h
+src/Simply linked list/SLL.h
+/home/eduardo/Desktop/Projects/TareaExtra_1_CE2103/src/Simply linked list/SLL.h
+
+/home/eduardo/Desktop/Projects/TareaExtra_1_CE2103/src/Node/Node.h
+string
+/home/eduardo/Desktop/Projects/TareaExtra_1_CE2103/src/Node/string
+cstdio
+-
+iostream
+/home/eduardo/Desktop/Projects/TareaExtra_1_CE2103/src/Node/iostream
+
+/home/eduardo/Desktop/Projects/TareaExtra_1_CE2103/src/Simply linked list/SLL.h
+../Node/Node.h
+/home/eduardo/Desktop/Projects/TareaExtra_1_CE2103/src/Node/Node.h
+

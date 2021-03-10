@@ -7,7 +7,7 @@
 using namespace std;
 
 /**>
- * This method adds an element to the end of the list, using the memory collector
+ * @brief This method adds an element to the beginning of the list, using the memory collector
  * for allocating the memory.
  * @tparam T Generic data type, must have equal operator.
  * @param element element to add to the list.
@@ -20,15 +20,15 @@ void List<T>::append(T element) {
     if (this->head == nullptr) {
         this->head = this->tail = newElement;
     } else {
-        this->tail->setNext(newElement);
-        this->tail = newElement;
+        newElement->setNext(this->head);
+        this->head = newElement;
     }
     this->len += 1;
 
 }
 
 /**>
- * This method prints the list into the console.
+ * @brief This method prints the list into the console.
  * @tparam T Generic data type, must have equal operator.
  */
 template<typename T>
@@ -47,7 +47,7 @@ void List<T>::show() {
 }
 
 /**>
- * Method for deleting a Node of the list.
+ * @brief Method for deleting a Node of the list.
  * @tparam T Generic data type, must have equal operator.
  * @param element T type element to eliminate from the list.
  */

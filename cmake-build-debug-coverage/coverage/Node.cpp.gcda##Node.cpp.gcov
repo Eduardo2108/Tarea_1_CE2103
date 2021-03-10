@@ -1,0 +1,55 @@
+        -:    0:Source:/home/eduardo/Desktop/Projects/TareaExtra_1_CE2103/src/Node/Node.cpp
+        -:    0:Graph:/home/eduardo/Desktop/Projects/TareaExtra_1_CE2103/cmake-build-debug-coverage/CMakeFiles/TareaExtra_1_CE2103.dir/src/Node/Node.cpp.gcno
+        -:    0:Data:/home/eduardo/Desktop/Projects/TareaExtra_1_CE2103/cmake-build-debug-coverage/CMakeFiles/TareaExtra_1_CE2103.dir/src/Node/Node.cpp.gcda
+        -:    0:Runs:1
+        -:    1://
+        -:    2:// Created by eduardo on 2/28/21.
+        -:    3://
+        -:    4:#include "iostream"
+        -:    5:#include "Node.h"
+        -:    6:
+        -:    7:using namespace std;
+        -:    8:
+        -:    9:/**
+        -:   10: * Get for the value stored in the node.
+        -:   11: * @return Integer object.
+        -:   12: */
+        6:   13:int Node::getValue() const {
+        6:   14:    return value;
+        6:   14-block  0
+        -:   15:}
+        -:   16:
+        -:   17:/***
+        -:   18: * Method for storing a new value on the node.
+        -:   19: * @param value: Integer object.
+        -:   20: */
+    #####:   21:void Node::setValue(int value) {
+    #####:   22:    Node::value = value;
+    #####:   23:}
+        -:   24:
+        -:   25:/**
+        -:   26: * Get for the pointer stored in the node, pointing to the next node in the list.
+        -:   27: * @return Pointer to next, nullptr if none.
+        -:   28: */
+        2:   29:Node *Node::getNext() const {
+        2:   30:    return next;
+        2:   30-block  0
+        -:   31:}
+        -:   32:
+        -:   33:/**
+        -:   34: * Set for the next pointer.
+        -:   35: * @param next: pointer to a node.
+        -:   36: */
+        2:   37:void Node::setNext(Node *next) {
+        2:   38:    Node::next = next;
+        2:   39:}
+        -:   40:
+        -:   41:/**
+        -:   42: * Constructor for the node.
+        -:   43: * @param value: Integer value thats going to be stored in the node.
+        -:   44: */
+        3:   45:Node::Node(int value) {
+        3:   46:    this->value = value;
+        3:   47:    this->next = NULL;
+        -:   48:
+        3:   49:}

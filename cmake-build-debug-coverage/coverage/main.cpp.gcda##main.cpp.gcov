@@ -1,0 +1,22 @@
+        -:    0:Source:/home/eduardo/Desktop/Projects/TareaExtra_1_CE2103/main.cpp
+        -:    0:Graph:/home/eduardo/Desktop/Projects/TareaExtra_1_CE2103/cmake-build-debug-coverage/CMakeFiles/TareaExtra_1_CE2103.dir/main.cpp.gcno
+        -:    0:Data:/home/eduardo/Desktop/Projects/TareaExtra_1_CE2103/cmake-build-debug-coverage/CMakeFiles/TareaExtra_1_CE2103.dir/main.cpp.gcda
+        -:    0:Runs:1
+        -:    1:#include <iostream>
+        -:    2:#include "src/Node/Node.h"
+        -:    3:#include "src/Simply linked list/SLL.h"
+        -:    4:
+        -:    5:using namespace std;
+        -:    6:
+        1:    7:int main() {
+        1:    8:    SLL *list = new SLL();
+        1:    8-block  0
+        -:    9:
+        1:   10:    list->append(1);
+        1:   11:    list->append(2);
+        1:   12:    list->append(3);
+        -:   13:
+        1:   14:    list->show();
+        -:   15:
+        1:   16:    return 0;
+        -:   17:}

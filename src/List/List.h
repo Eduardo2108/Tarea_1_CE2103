@@ -13,10 +13,10 @@
 template<typename T>
 class List {
 private:
-    int len;
-    Node<T> *head;
-    Node<T> *tail;
-    Collector<T> collector;
+    int len;  /*!<Length of the list.*/
+    Node<T> *head; /*!<Head of the list.*/
+    Node<T> *tail;  /*!<Tail of the list.*/
+    Collector<T> collector; /*!<Collector instance for memory management.*/
 public:
     void append(T element);
 
